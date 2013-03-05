@@ -1,0 +1,13 @@
+diff --git a/image_field_caption.module b/image_field_caption.module
+index 7bdca32..fa45228 100644
+--- a/image_field_caption.module
++++ b/image_field_caption.module
+@@ -50,7 +50,7 @@ function image_field_caption_menu() {
+ /**
+  * The module's settings form.
+  */
+-function image_field_caption_settings() {
++function image_field_caption_settings($form, &$form_state) {
+   $form = array();
+   $form['image_field_caption_allowed_tags'] = array(
+     '#title' => 'Allowed Tags',
