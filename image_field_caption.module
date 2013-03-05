@@ -50,7 +50,7 @@ function image_field_caption_menu() {
 /**
  * The module's settings form.
  */
-function image_field_caption_settings() {
+function image_field_caption_settings($form, &$form_state) {
   $form = array();
   $form['image_field_caption_allowed_tags'] = array(
     '#title' => 'Allowed Tags',
