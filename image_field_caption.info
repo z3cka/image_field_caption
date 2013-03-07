@@ -4,3 +4,5 @@ core = 7.x
 package = Other
 dependencies[] = image
 configure = admin/config/media/image-field-caption
+
+scripts[] = image_field_caption.js
