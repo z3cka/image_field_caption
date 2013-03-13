@@ -13,10 +13,10 @@
       if (cap.count <= 0) {
         // remove all localStorage
         var i = 0;
-        while (localStorage.length >= 1) {
-          localStorage.removeItem(i);
-          i++;
-        }
+//        while (localStorage.length >= 1) {
+//          localStorage.removeItem(i);
+//          i++;
+//        }
       } else if (cap.count > 0) {
         for (var i = 0; i < localStorage.length; i++){
           var item = localStorage.getItem(i);
@@ -30,7 +30,8 @@
         localStorage.setItem(cap.id, cap.text);
       });
       // event for removing caption from removed image
-      $('div.field-type-image input.form-submit').mousedown(function(e) {
+      $('body.page-node-add div.field-type-image input.form-submit, ' +
+        'body.page-node-edit div.field-type-image input.form-submit').mousedown(function(e) {
         var button = {};
         button.type = e.currentTarget.id.substring(e.currentTarget.id.length - 13);
         if (button.type == 'remove-button') {
